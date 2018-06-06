@@ -1,19 +1,51 @@
 <!DOCTYPE html>
+
 <html>
 <head>
+  <script>
+
+
+  var topcamera = document.getElementById("topcamera");
+  var bottomcamera = document.getElementById("bottomcamera");
+  var film = document.getElementById("film");
+
+
+
+    topcamera.style.top = 150 + y + "px";
+    bottomcamera.style.top = 550 + y + "px";
+
+    counter.innerHTML = y + "px";
+
+    if (y > 200) {
+      film.style.backgroundColor = "visible";
+    }else{
+      film.style.backgroundColor = "hidden";}
+
+      film.style.top = 550 + y  + "px";
+
+  </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
 <title>Polaroid Originals</title>
+
 <style>
+
 
 h1 {
     width: 200px;
     height: 200px;
-    padding-left: 500px;
 }
 body {
-    background-color: white;
+    position: relative;
+    background-image:url('background.png');
+    background-repeat: repeat;
+    height: 10000px;
+    margin: auto;
+    z-index: -10;
+
 }
 
 h1 {font-family: 'Raleway', sans-serif;
@@ -21,21 +53,182 @@ text-align: center;
 color: indigo;
 font-size: 36pt;
 
+
 }
+
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-.image {
-  padding-left: 240px;
-  padding-top: -90px;
+
+#topcamera {
+  position: absolute;
+  top: 150px;
+  margin: auto;
+  padding-left: 350px;
+  z-index: 10;
+
+
+
+}
+#bottomcamera {
+  position: absolute;
+  top: 450px;
+  margin: auto;
+  padding-left: 350px;
+  z-index: 1;
+
+
+}
+#film {
+  position: absolute;
+  top: 550px;
+  margin: auto;
+  padding-left: 420px;
+  padding-top: -850px;
+
+
+}
+#film2 {
+  position: absolute;
+  top: 900px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -950px;
+
+}
+#film3 {
+  position: absolute;
+  top: 1250px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -1050px;
+
+}
+#film4 {
+  position: absolute;
+  top: 1600px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -1150px;
+
+}
+#film5 {
+  position: absolute;
+  top: 1950px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -1250px;
+
+}
+#film6 {
+  position: absolute;
+  top: 2300px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -1350px;
+
+}
+#film7 {
+  position: absolute;
+  top: 2650px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -1450px;
+
+}
+#film8 {
+  position: absolute;
+  top: 3000px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -1550px;
+
+}
+#film9 {
+  position: absolute;
+  top: 3350px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -1650px;
+
+}
+#film10 {
+  position: absolute;
+  top: 3700px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -1750px;
+
+}
+#film11 {
+  position: absolute;
+  top: 4050px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -1850px;
+
+}
+#film12 {
+  position: absolute;
+  top: 4400px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -1950px;
+
+}
+#film13 {
+  position: absolute;
+  top: 4750px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -2050px;
+
+}
+#film14 {
+  position: absolute;
+  top: 5100px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -2150px;
+
+}
+#film15 {
+  position: absolute;
+  top: 5450px;
+  margin: auto;
+  padding-left:420px;
+  padding-top: -2250px;
+
 }
 
 </style>
 </head>
 <body>
 
-<h1>Polaroid</h1>
-<img src="poloroid.png" alt="poloroid camera" class="image">
+<div id="topcamera"></div>
+<div id="bottomcamera"></div>
+<h1>Polaroid Originals</h1>
+
+<img src="camera95.png" alt="poloroid camera" id="topcamera">
+<img src="bottompart.png" alt="poloroid camera2" id="bottomcamera">
+<img src="instantfilm.png" alt="poloroid film" id="film">
+<img src="95landcamera.png" alt="95film" id="film2">
+<img src="color.png" alt="colorfilm" id="film3">
+<img src="swinger.png" alt="swingercamera" id="film4">
+<img src="swing.png" alt="swingcamera" id="film5">
+<img src="sx.png" alt="sx" id="film6">
+<img src="70.png" alt="70" id="film7">
+<img src="onestep.png" alt="os" id="film8">
+<img src="ones.png" alt="onestep" id="film9">
+<img src="spectra.png" alt="spect" id="film10">
+<img src="38.png" alt="38y" id="film11">
+<img src="1992.png" alt="captiva" id="film12">
+<img src="pc.png" alt="ps" id="film13">
+<img src="pe.png" alt="ps" id="film14">
+<img src="express.png" alt="ps" id="film15">
+
 
 </a>
+
+
 
 
 

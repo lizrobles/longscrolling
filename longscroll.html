@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Polaroid Originals</title>
+<style>
+    body {
+        background-color: red;
+        height: 10000px;
+
+    }
+    #content {
+        padding: 50px;
+        margin: 40px;
+        background-color: rgba(255, 255, 255, .48);
+        text-align: center;
+
+    }
+    #content p {
+        font-family: Helvetica, sans-serif;
+        font-size: 28px;
+        line-height: 10000px;
+        color: #111;
+    }
+    h1 {
+        text-transform: capitalize;
+        font-family: sans-serif;
+        font-size: 40px;
+        padding: 10px;
+        margin: 40px;
+        background-color: orange;
+        color: yellow;
+    }
+    #camera {
+        background-image: url("jz.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 90%;
+        position: fixed;
+        top: 0;
+        width: 500px;
+        height: 500px;
+        z-index: -1;
+        opacity: .75;
+    }
+    #blueSquare {
+        background-image: url("os2.png");
+        background-repeat: no-repeat;
+        background-position: 90% left;
+        background-size: 10%;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vw;
+        z-index: -2;
+        opacity: .75;
+    }
+    #greenPentagon {
+        background-image: url("bn.png");
+        background-repeat: no-repeat;
+        background-position: 5% top;
+        background-size: 50%;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vw;
+        z-index: -3;
+        opacity: .75;
+    }
+
+</style>
+</head>
+
+<body>
+
+<h1>Polaroid Originals</h1>
+<div id="content">
+  <img src="instantfilm.png" alt="poloroid film">
+  <img src="95landcamera.png" alt="95film">
+  <img src="swinger.png" alt="swingercamera">
+  <img src="swing.png" alt="swingcamera">
+  <img src="70.png" alt="70">
+  <img src="sx.png" alt="sx">
+  <img src="ones.png" alt="onestep">
+  <img src="onestep.png" alt="os">
+  <img src="38.png" alt="38y">
+  <img src="spectra.png" alt="spect">
+  <img src="1992.png" alt="captiva">
+  <img src="pc.png" alt="ps">
+  <img src="express.png" alt="ps">
+  <img src="pe.png" alt="ps">
+  <img src="oos22.png" alt="oos22">
+  <img src="cccc.png" alt="new">
+
+<div id="camera"></div>
+<div id="blueSquare"></div>
+<div id="greenPentagon"></div>
+
+<script>
+    var camera = document.querySelector("#camera");
+    var blueSquare = document.querySelector("#blueSquare");
+    var greenPentagon = document.querySelector("#greenPentagon");
+
+    function setTranslate(xPos, yPos, el) {
+        el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+    }
+
+    window.addEventListener("DOMContentLoaded", scrollLoop, false);
+
+    var xScrollPosition;
+    var yScrollPosition;
+
+    function scrollLoop() {
+        xScrollPosition = window.scrollX;
+        yScrollPosition = window.scrollY;
+
+        setTranslate(0, yScrollPosition * -0.2, camera);
+        setTranslate(0, yScrollPosition * 0.5, blueSquare);
+        setTranslate(0, yScrollPosition * 0.1, greenPentagon);
+
+        requestAnimationFrame(scrollLoop);
+    }
+
+</script>
+</body>
+</html>
